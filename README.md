@@ -17,7 +17,7 @@ Total Patterns: 17,126 hits
 Break-even: 89 queries
 
 
-![Benchmark Results](charts/chart_breakeven.png)
+![Benchmark Results](charts/chart_breakeven_analysis.png)
 
 ## 🚀 Quick Start
 
@@ -90,3 +90,4 @@ print(f"Found {sum(len(p) for p in patterns.values())} patterns")
 MIT - see LICENSE
 
 40× compression. 17K patterns. Production-ready.
+
