@@ -103,7 +103,7 @@ print(f"Found {sum(len(p) for p in patterns.values())} patterns")
 ```bibtex
 @misc{tps_core_2026,
   title={TPS Core: Ternary Pattern Search for HFT Time-Series},
-  author={Mr. Anonymous},
+  author={Mr.Anonymous(Github account owner)},
   year={2026},
   howpublished={\url{https://github.com/Ternary-Project/TPS}}
 }
