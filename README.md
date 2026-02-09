@@ -23,10 +23,9 @@ Break-even: 89 queries
 
 ```bash
 pip install numpy pandas matplotlib
-
 python test_tps.py
 
-Output:
+Example Output
 
 TPS CORE TESTER
 📦 Compressing... ✓ 351ms (40.0×)
@@ -37,20 +36,20 @@ TPS CORE TESTER
 📋 Total: 17,126 patterns
 
 📊 Patterns Detected
-
-| Pattern        | Hits   | Signature |
-| -------------- | ------ | --------- |
-| Stop-Loss Hunt | 36     | DDDUUU    |
-| Vol Squeeze    | 16,901 | -----UUU  |
-| Algo Staircase | 6      | U-U-U-U-  |
-| Momentum Crash | 183    | UUUD      |
-
+Pattern	Hits	Signature
+Stop-Loss Hunt	36	DDDUUU
+Vol Squeeze	16,901	-----UUU
+Algo Staircase	6	U-U-U-U-
+Momentum Crash	183	UUUD
 🏆 Research Validation
 
-Storage: 40.0× better
-Search Speed: 8.5× faster
-Break-even: 89 queries
-98.4% flat deltas → Perfect ternary fit
+    Storage: 40× better
+
+    Search Speed: 8.5× faster
+
+    Break-even: 89 queries
+
+    98.4% flat deltas → Perfect ternary fit
 
 🔧 Installation
 
@@ -75,24 +74,22 @@ from TPS import DeltaTernary
 dt = DeltaTernary(threshold=0.005)
 packed, orig_len = dt.compress(prices)
 patterns = dt.detect_all_patterns(packed, orig_len)
+
 print(f"Found {sum(len(p) for p in patterns.values())} patterns")
 
 📚 Citation
 
 @misc{tps_core_2026,
   title={TPS Core: Ternary Pattern Search for HFT Time-Series},
-  author={Mr.Anonymous},
+  author={Mr. Anonymous},
   year={2026},
   howpublished={\url{https://github.com/Ternary-Project/TPS}}
 }
 
 🤝 License
-MIT - see LICENSE
+
+MIT — see LICENSE
+🏁 Summary
 
 40× compression. 17K patterns. Production-ready.
-
-
-40× compression. 17K patterns. Production-ready.
-
-
 
